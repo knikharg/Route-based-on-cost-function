@@ -2,7 +2,7 @@
 #!/usr/local/bin/python3
 # route.py : Road trip!
 #
-# Code by: Kasturi Nikharge (knikharg), Vrinda Mathur(vrmath), Neha Tayade (ntayade)
+# Code by: Kasturi Nikharge 
 
 #from math import radians, cos, sin, asin, sqrt
          
@@ -63,21 +63,10 @@ def solve(graph):
             
 
 if __name__ == "__main__":
+     sysargv2 =sys.argv[2]
+     city1 = sys.argv[0]
+     city2 = sys.argv[1]
     
-    #===========================================================================
-    # sysargv2 =sys.argv[2]
-    # city1 = sys.argv[0]
-    # city2 = sys.argv[1]
-    #===========================================================================
-    #citylist=[]
-    sysargv2 = "distance"
-    city2 = "Bloomington,_Indiana"
-    city1 = "Las_Vegas,_Nevada"
-    #===========================================================================
-    # with open("city-gps", 'r') as file:
-    #     for line in file:
-    #         citylist.append([str(i) for i in line.split()])
-    #===========================================================================
     g = Graph({})
     with open("road-segments", 'r') as file:
         for line in file:
